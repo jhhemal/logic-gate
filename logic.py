@@ -5,9 +5,7 @@
 #	Author - Jahidul Hasan Hemal
 #
 
-""" Function for Gates """
 def lgates(gn):
-	""" Code for Not Gate """
 	if gn == "NOT":
 		while True:
 			inp = eval(input("Enter Your Input for X (1 or 0): "))
@@ -19,9 +17,6 @@ def lgates(gn):
 				break
 			else:
 				print("Enter either 0 or 1.")
-	""" End of code for not gate """
-
-	""" code for AND Gate """
 	elif gn == "AND":
 		while True:
 			(a,b) = input("Enter your Input for A,B (1 and 0 only) : ").split()
@@ -34,9 +29,6 @@ def lgates(gn):
 				else:
 					print("Output A.B : 0")
 				break
-	""" End of code for AND Gate """
-
-	""" Code For OR Gate """
 	elif gn == "OR":
 		while True:
 			(a,b) = input("Enter your Input for A,B (1 and 0 only) : ").split()
@@ -49,9 +41,6 @@ def lgates(gn):
 				else:
 					print("Output A+B : 1")
 				break
-	""" End of code for OR Gate """
-
-""" End of Function for Gates """
 
 print(f"Welcome to Logic program".center(50,'*'))
 gates = ["AND", "OR", "NOT", "NOR", "NAND", "XOR", "X-NOR"]
@@ -64,4 +53,4 @@ while True:
 	else:
 		print("Please write any gates name from the list shown above")
 
-lgates(i) # Calling the function we have created for gates.
+lgates(i)
